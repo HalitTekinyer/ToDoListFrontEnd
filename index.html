@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/462a684256.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="new-task-modal" class="new-task-modal" style="visibility: hidden;">
+        <div class="model-container-div">
+            <input type="text" class="task-text-input" id="task-text-input" name="task-text-input" placeholder="Please type task."><br><br>
+            <div class="new-task-modal-button-container">
+                <button id="new-task-model-button-cancel" class="new-task-model-button" style="grid-column: 1;">Cancel</button>
+                <button id="new-task-model-button-add" class="new-task-model-button" style="grid-column: 3;">Add</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-div">
+        <div class="title-div">
+            <i class="fa-xl-home fa-solid fa-bars icon"></i><h2>Website Todo</h2>
+        </div>
+        <div id="content-div" class="content-div">
+            <div class="radio-element">
+                <input type="checkbox" id="html" name="fav_language" value="HTML" onchange="CheckboxChange(this)">
+                <label for="html">HTML</label>
+                <i class="fa-regular fa-trash-can delete-button" style="visibility: hidden;" onclick="DeleteTask(this)"></i>
+            </div>
+            <div class="radio-element">
+                <input type="checkbox" id="html2" name="fav_language" value="HTML" onchange="CheckboxChange(this)">
+                <label for="html2">HTML</label>
+                <i class="fa-regular fa-trash-can delete-button" style="visibility: hidden;" onclick="DeleteTask(this)"></i>
+            </div>
+        </div>
+        <div class="button-div">
+            <button id="new-task-button" class="new-task-button">+ New task</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

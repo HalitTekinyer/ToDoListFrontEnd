@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+body{
+    background-color: #e3e9ff;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+}
+.container-div{
+    margin-top: 6%;
+    margin-inline: 32%;
+    padding: 0px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.model-container-div{
+    border-radius: 10px;
+    padding: 3em;
+    margin-top: 10%;
+    margin-inline: 25%;
+    background-color: #fff;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.title-div{
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.08);
+    margin: 10px;
+    background-color: #af7eeb;
+    margin-bottom: 2em;
+    align-content: center;
+}
+.content-div{
+    background-color: #fff;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.08);
+    margin: 10px;
+    padding: 25px;
+}
+.button-div{
+    display: flex;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+.new-task-modal{
+    z-index: 20;
+    box-shadow: 0 0 10px 1px rgba(175, 126, 235, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.icon{
+    display: inline-block;
+    vertical-align: 0px;
+    transform: translateX(15%);
+    width: 20%;
+}
+.radio-element{
+    color: #9098bc;
+    display: grid;
+    grid-template-columns: 1em auto 1em;
+    gap: 1em;
+    padding-bottom: 1em;
+}
+h2{
+    text-align: center;
+    transform: translateX(-12.5%);
+    display: inline-block;
+    width: 80%;
+}
+.fa-xl-home{
+    font-size: 1.5em;
+    line-height: .04167em;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 0.9em;
+    height: 0.9em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    transform: translateY(0.25em);
+    display: grid;
+    place-content: center;
+  }
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 0.9em 0.9em #d1a4ff;
+    background-color: CanvasText;
+}
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+.new-task-button{
+    box-shadow: 0 0 10px 1px rgba(175, 126, 235, 0.5);
+    cursor: pointer;
+    grid-column: 2;
+    justify-self: center;
+    width: 40%;
+    text-align: center;
+    background-color: #af7eeb;
+    font-weight: bold;
+    font-size: large;
+    border: 0px;
+    padding-block: 15px;
+    border-radius: 20px;
+    color: #fff;
+}
+.new-task-button:active{
+    box-shadow: 0 0 10px 1px rgba(175, 126, 235, 0.5);
+    cursor: pointer;
+    grid-column: 2;
+    justify-self: center;
+    width: 40%;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    border: 0px;
+    padding-block: 15px;
+    border-radius: 20px;
+    color: rgb(221, 221, 221);
+    background-color: #9e64e6;
+}
+.delete-button{
+    cursor: pointer;
+}
+.task-text-input{
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #9098bc;
+    margin-bottom: 2em;
+}
+.new-task-modal-button-container{
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+}
+.new-task-model-button{
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 0 10px 1px rgba(175, 126, 235, 0.3);
+    padding: 10px;
+    font-weight: 500;
+    font-size: 1em;
+    border-radius: 10px;
+    border: 0px;
+    color: #fff;
+    background-color: #af7eeb;
+}
+.new-task-model-button:active{
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 0 10px 1px rgba(175, 126, 235, 0.3);
+    padding: 10px;
+    font-weight: 500;
+    font-size: 1em;
+    border-radius: 10px;
+    border: 0px;
+    color: rgb(221, 221, 221);
+    background-color: #9e64e6;
+}
